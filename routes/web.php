@@ -12,7 +12,7 @@ Route::get('/inicio', function () {
 
 Route::get('/loja',
             [\App\Http\Controllers\TesteController::class, 'index'])
-            ->name('teste');
+            ->name('loja');
 
 Route::get('produto',
             [\App\Http\Controllers\DisciplinaController::class, 'index'])

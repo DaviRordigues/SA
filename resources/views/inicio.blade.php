@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<main class="hero">
+<main class="hero pagina-inicial">
     <section class="wrapper">
-        <div class="hero_content">
+        <div class="hero_content ">
             <div class="hero_img_wrapper">
                 <div class="hero_img">
                     <img src="{{ Vite::asset('resources/images/imagemlanding.jpg') }}">
