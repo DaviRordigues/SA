@@ -20,7 +20,7 @@
                         <p>Construa um futuro melhor e conectado com os produtos e serviços da TechStore.</p>
                     </div>
                     <div class="btn_wrapper">
-                        <a href="{{ route('login') }}"><button class="btn_contact">Iniciar Sessão</button></a>
+                        <a href="{{ route('register') }}"><button class="btn_contact">Iniciar Sessão</button></a>
                     </div>
                 </div>
             </div>
