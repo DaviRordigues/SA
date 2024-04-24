@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<main class="hero pagina-inicial">
+<main class="hero pagina-inicial inicio">
     <section class="wrapper">
         <div class="hero_content ">
             <div class="hero_img_wrapper">
@@ -17,7 +17,7 @@
                         </h3>
                     </div>
                     <div class="tagline">
-                        <p>Construa um futuro melhor e conectado com os produtos e serviços da TechStore.</p>
+                        <p>Compre os produtos da TechStore e receba metalcoins como bonus</p>
                     </div>
                     <div class="btn_wrapper">
                         <a href="{{ route('register') }}"><button class="btn_contact">Iniciar Sessão</button></a>

@@ -2,10 +2,25 @@ body {
     background: #f2f0fa;
     overflow: hidden;
 }
+.loja{
 
+
+}
 
 .card-img-top{
-    padding: 10px 2px;
+    padding: 0px 15px;
+}
+.button-home{
+    margin: 400px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.button-home:hover{
+    background-color: #1a202c;
+    color: white;
+    border: transparent;
 }
 
 .card {

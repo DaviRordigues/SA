@@ -7,7 +7,7 @@
             <thead>
                 <tr>
                     <th width="50">ID</th>
-                    <th width="*">Cliente</th>
+                    <th width="*">Produtos</th>
                     <th width="180">Criado em</th>
                     <th width="180">Atualizado em</th>
                     <th width="180">Ações</th>

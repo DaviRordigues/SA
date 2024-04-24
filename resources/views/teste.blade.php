@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="container mt-5">
+<div class="container mt-5 loja">
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card product">
@@ -9,6 +9,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Galaxy Watch SM-R500NZ</h3>
                     <p class="card-text" style="color: green">R$ 1.800,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 18,00</p>
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
 
                 </div>
@@ -21,6 +22,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Iphone 15 pro 128 GB</h3>
                     <p class="card-text" style="color: green">R$ 5.800,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 58,00</p>
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
 
                 </div>
@@ -32,6 +34,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Samsung Galaxy Buds</h3>
                     <p class="card-text" style="color: green">R$ 280,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 2,80</p>
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
 
                 </div>
@@ -43,6 +46,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Alexa All-new Echo Dot</h3>
                     <p class="card-text" style="color: green">R$ 429,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 4,29</p>
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
 
                 </div>
@@ -54,6 +58,7 @@
                 <div class="card-body">
                     <h3 class="card-title">MacBook Air M1 Chip </h3>
                     <p class="card-text" style="color: green">R$ 5.280,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 52,00</p>
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
 
                 </div>
@@ -65,6 +70,8 @@
                 <div class="card-body">
                     <h3 class="card-title">Apple Watch Ultra 2</h3>
                     <p class="card-text" style="color: green">R$ 5.780,00</p>
+                    <p class="card-text" style="color: #065006"> + 💰 57,00</p>
+
                     <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comprarModal">Comprar</a> +1% 💰
                 </div>
             </div>

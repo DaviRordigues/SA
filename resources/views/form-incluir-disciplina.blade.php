@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="disciplina" class="label-form">Cliente</label>
+                    <label for="disciplina" class="label-form">Produtos</label>
                     <input type="text" name="disciplina" id="disciplina" class="form-control"
                         value=""  required>
                 </div>
