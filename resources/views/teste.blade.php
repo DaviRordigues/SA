@@ -6,6 +6,7 @@
         <div class="col-md-4 mb-4">
             <div class="card product">
                 <img src="{{ Vite::asset('resources/images/relogiosamsung.jpg') }}" class="card-img-top" alt="Product">
+
                 <div class="card-body">
                     <h3 class="card-title">Galaxy Watch SM-R500NZ</h3>
                     <p class="card-text" style="color: green">R$ 1.800,00</p>
@@ -117,6 +118,23 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            document.getElementById('confirmPurchase').addEventListener('click', function() {
+                // Exibir o pop-up SweetAlert2
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Compra confirmada!',
+                    text: 'Sua compra foi realizada com sucesso.',
+                    confirmButtonText: 'OK'
+                });
+
+                // Fechar o modal após a confirmação da compra
+                $('#comprarModal').modal('hide');
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
 
 
         @endsection

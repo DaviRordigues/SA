@@ -22,7 +22,17 @@ body {
     color: white;
     border: transparent;
 }
+.button-register{
+    transition: 0.5s;
+    margin-bottom: 50px;
 
+}
+.button-register:hover{
+    background-color: darkblue;
+    color: white;
+    border: transparent;
+    transform: translateY(-3px);
+}
 .card {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 8px;
@@ -30,6 +40,8 @@ body {
     width: 100%; /* Definir a largura para 100% */
     max-width: 200px; /* Adicionar uma largura máxima para cada cartão */
 }
+
+
 
 .card-login{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
