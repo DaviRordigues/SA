@@ -115,25 +115,53 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-primary" id="confirmPurchase">Confirmar compra</button>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <script>
             document.getElementById('confirmPurchase').addEventListener('click', function() {
-                // Exibir o pop-up SweetAlert2
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Compra confirmada!',
-                    text: 'Sua compra foi realizada com sucesso.',
-                    confirmButtonText: 'OK'
-                });
+                // Verificar se todos os campos do formulário estão preenchidos
+                var fullName = document.getElementById('fullname').value;
+                var cpf = document.getElementById('cpf').value;
+                var email = document.getElementById('email').value;
+                var address = document.getElementById('address').value;
+                var cep = document.getElementById('cep').value;
 
-                // Fechar o modal após a confirmação da compra
-                $('#comprarModal').modal('hide');
+                if (fullName === '' || cpf === '' || email === '' || address === '' || cep === '') {
+                    // Se algum campo estiver vazio, exibir um alerta informando ao usuário para preencher todos os campos
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Erro',
+                        text: 'Por favor, preencha todos os campos do formulário.',
+                        confirmButtonText: 'OK'
+                    });
+                } else {
+                    // Se todos os campos estiverem preenchidos, exibir o pop-up de confirmação da compra
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Compra confirmada!',
+                        text: 'Sua compra foi realizada com sucesso.',
+                        confirmButtonText: 'OK'
+                    }).then(function() {
+                        // Atualizar o contador de metal coins na barra de navegação
+                        var metalCoinsElement = document.getElementById('metal-coin-count');
+                        var currentMetalCoins = parseInt(metalCoinsElement.textContent);
+                        var novaQuantidadeMetalCoins = currentMetalCoins + 1;
+                        metalCoinsElement.textContent = novaQuantidadeMetalCoins;
+                    });
+
+                    // Fechar o modal após a confirmação da compra
+                    $('#comprarModal').modal('hide');
+                }
             });
         </script>
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
 
 
 
