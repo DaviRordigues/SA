@@ -19,6 +19,8 @@
             </div>
             <a class="navbar-brand button-home btn " href="{{ route('inicio') }}">inicio</a>
         </div>
+        <br>
+
     </div>
 </div>
 @endsection

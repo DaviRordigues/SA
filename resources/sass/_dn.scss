@@ -2,10 +2,6 @@ body {
     background: #f2f0fa;
     overflow: hidden;
 }
-.loja{
-
-
-}
 
 .card-img-top{
     padding: 0px 15px;
@@ -17,16 +13,19 @@ body {
     border-radius: 8px;
     font-size: 20px;
 }
+
 .button-home:hover{
     background-color: #1a202c;
     color: white;
     border: transparent;
 }
-.button-register{
-    transition: 0.5s;
-    margin-bottom: 50px;
 
+.button-register{
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 10px;
 }
+
 .button-register:hover{
     background-color: darkblue;
     color: white;
